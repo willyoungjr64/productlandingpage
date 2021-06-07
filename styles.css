@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #78B9FA;
+    }
+  }
+
+
+
+#header {
+    display: flex;
+    background-color: #56E3FF;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+#header-img {
+    width: auto;
+    height: 100px;
+    
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    
+  }
+
+  .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    
+  }
+  .iframe-container iframe{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  .video {
+      background-color: #78B9FA;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      
+  }
+
+  .contact {
+      padding: 40px;
+  }
+
+  #form {
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    
+    grid-gap: .8em;
+    background: #eee;
+    padding: 1.2em;
+  }
+  #form > label  {
+    grid-column: labels;
+    grid-row: auto;
+  }
+  #form > input,
+  #form > textarea {
+    grid-column: controls;
+    grid-row: auto;
+    border: none;
+    padding: 1em;
+  }
+
+  .btn {
+    grid-column: controls;
+    background-color: #56E3FF;
+    width: 25%;
+    margin:0 auto;
+     
+    border: none;
+    padding: 1em;
+    
+  }
